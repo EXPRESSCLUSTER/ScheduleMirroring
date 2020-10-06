@@ -42,9 +42,9 @@ In the nighttime, Mirroring is running and Application is stopped. (Mirroring Ti
 	- For example, if SQL Server is clustered, SQL Server instance service is stopped to stop its transaction.
 - While Operation Time, since mirroring is stopped, mdw monitor resource shows Caution "yellow icon" but please ignore it.
 - If Application is not stopped at the beginning of Mirroring Time, Mirroring will not start.
-- If Mirroring is not stopped after Mirroring is completed, Application will not start automatically. Please refer [Application Operation](★)
+- If Mirroring is not stopped after Mirroring is completed, Application will not start automatically. Please refer [Application Operation](https://github.com/EXPRESSCLUSTER/ScheduleMirroring/blob/main/2nodeWinMd_X33.md#application-operation)
 - If Mirroring cannot complete in Mirroring Time every day, your system does NOT match Schedule Mirroring. Please consider to set Sync Mirroring.
-- If you want to failover, you need to do it manually. Please refer [Failover Operation](★)
+- If you want to failover, you need to do it manually. Please refer [Failover Operation](https://github.com/EXPRESSCLUSTER/ScheduleMirroring/blob/main/2nodeWinMd_X33.md#failover-operation)
 - If you execute failover, data which is not mirrored yet will be lost.
 
 ## Setup
@@ -173,7 +173,7 @@ This section shows how to execute failover from Primary Server to Secondary Serv
 
 - **Note**
 	- After these steps, Application starts with data at the last md synchronized time. And data after the last md synchronized time is lost.
-	- After these steps, until execute [Failback Operation](★), mirroring will not be re-synchronized.
+	- After these steps, until execute [Failback Operation](https://github.com/EXPRESSCLUSTER/ScheduleMirroring/blob/main/2nodeWinMd_X33.md#failback-operation), mirroring will not be re-synchronized.
 
 ## Failback Operation
 This section shows how to recover Primary Server and execute failback from Secondary Server to Primary Server.  
@@ -220,11 +220,11 @@ This section shows how to recover Application if it is stopped although Operatio
 	- If Primary Server icon is RED and Secondary Server icon is GREEN:
 		1. Click close
 		1. Start failover group on Secondary Server
-		1. To move group to Primary Server, refer [Failback Operation] (★)
+		1. To move group to Primary Server, refer [Failback Operation] (https://github.com/EXPRESSCLUSTER/ScheduleMirroring/blob/main/2nodeWinMd_X33.md#failback-operation)
 	- If Primary Server icon is GRAY and Secondary Server icon is GREEN:
 		1. Click close
 		1. Start failover group on Secondary Server
-		1. To move group to Primary Server, refer [Failback Operation] (★)
+		1. To move group to Primary Server, refer [Failback Operation] (https://github.com/EXPRESSCLUSTER/ScheduleMirroring/blob/main/2nodeWinMd_X33.md#failback-operation)
 	-Other
 		- Contact Support with the following information:
 			- Cluster log:
