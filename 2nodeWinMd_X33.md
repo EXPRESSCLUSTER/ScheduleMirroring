@@ -25,7 +25,7 @@ Schedule Mirroring means that Mirroring is executed in the nighttime.
 In the daytime, Application is running and Mirroring is stopped. (Operation Time)  
 In the nighttime, Mirroring is running and Application is stopped. (Mirroring Time)
 
-- e.g.)
+- e.g.
 	- Operation Time: 7:00am - 7:59pm
 	- Mirroring Time: 8:00pm - 6:59am
 	- Schedule Mirroring overflow
@@ -120,16 +120,16 @@ This section shows how to set up existing md resource as Schedule Mirroring.
 	```bat
 	SM Success: Succeeded to synchronizing md resource.
 	```
-	- **Note**
+	- **Note:**
 		- If it is not recorded and any other error messages ("SM Error!") are recorded many times, your system may NOT match Schedule Mirroring. Consider to set Sync Mirroring.
 		- Contact Support with the following information:
-			- Cluster log:
-				- Collect log on WebManager
-			- Mirror Statistics:
-				- Collect all files under "C:\Program Files\EXPRESSCLUSTER\perf\disk" on BOTH servers
-			- Schedule Mirror Log:
-				- Collect all files under "C:\ECX_SM" on BOTH servers
-		- If "C:\ECX_SM\ScheduleMirrorLog.txt" file get huge, remove or archive old logs.
+			- Cluster log:  
+				Collect log on WebManager
+			- Mirror Statistics:  
+				Collect all files under "C:\Program Files\EXPRESSCLUSTER\perf\disk" on BOTH servers
+			- Schedule Mirror Log:  
+				Collect all files under "C:\ECX_SM" on BOTH servers
+		- If "C:\ECX_SM\ScheduleMirrorLog.txt" file gets huge, remove or archive old logs.
 ## Failover Operation
 This section shows how to execute failover from Primary Server to Secondary Server.
 
@@ -151,15 +151,15 @@ This section shows how to execute failover from Primary Server to Secondary Serv
 			```
 			- e.g.
 				- If you are executing failover between Oct 4th 8:00pm - Oct 5th 6:59am, you need to confirm the message is recorded between Oct 4th 8:00pm - Oct 5th 6:59am.
-	- **Note**
+	- **Note:**
 		- If md resource synchronized message is NOT recorded in specified time as the above, do NOT execute failover.  
 			Contact Support with the following information:
-			- Cluster log:
-				- Collect log on WebManager
-			- Mirror Statistics:
-				- Collect all files under "C:\Program Files\EXPRESSCLUSTER\perf\disk" on BOTH servers
-			- Schedule Mirror Log:
-				- Collect all files under "C:\ECX_SM" on BOTH servers
+			- Cluster log  
+				Collect log on WebManager
+			- Mirror Statistics  
+				Collect all files under "C:\Program Files\EXPRESSCLUSTER\perf\disk" on BOTH servers
+			- Schedule Mirror Log  
+				-Collect all files under "C:\ECX_SM" on BOTH servers
 
 1. If failover group is Online on Primary Server:
 	1. Stop the group.
@@ -171,7 +171,7 @@ This section shows how to execute failover from Primary Server to Secondary Serv
 1. Click Execute and close.
 1. Start failover group on Secondary Server.
 
-- **Note**
+- **Note:**
 	- After these steps, Application starts with data at the last md synchronized time. And data after the last md synchronized time is lost.
 	- After these steps, until execute [Failback Operation](https://github.com/EXPRESSCLUSTER/ScheduleMirroring/blob/main/2nodeWinMd_X33.md#failback-operation), mirroring will not be re-synchronized.
 
@@ -197,7 +197,7 @@ Until recovering Primary Server, md resource will not be re-synchronized.
 1. On WebManager, right click Schedule Mirroring target md resource and select "Details".
 1. Click Primary Server icon and make it GREEN. (Disk Copy will be executed.)
 1. Click Execute and close.
-	- **Note** After this step, Mirroring from Secondary Server to Primary Server will occur.
+	- **Note:** After this step, Mirroring from Secondary Server to Primary Server will occur.
 
 ### Failback
 #### On Primary Server
@@ -225,11 +225,11 @@ This section shows how to recover Application if it is stopped although Operatio
 		1. Click close
 		1. Start failover group on Secondary Server
 		1. To move group to Primary Server, refer [Failback Operation] (https://github.com/EXPRESSCLUSTER/ScheduleMirroring/blob/main/2nodeWinMd_X33.md#failback-operation)
-	-Other
+	- Other
 		- Contact Support with the following information:
-			- Cluster log:
-				- Collect log on WebManager
-			- Mirror Statistics:
-				- Collect all files under "C:\Program Files\EXPRESSCLUSTER\perf\disk" on BOTH servers
-			- Schedule Mirror Log:
-				- Collect all files under "C:\ECX_SM" on BOTH servers
+			- Cluster log:  
+				Collect log on WebManager
+			- Mirror Statistics:  
+				Collect all files under "C:\Program Files\EXPRESSCLUSTER\perf\disk" on BOTH servers
+			- Schedule Mirror Log:  
+				Collect all files under "C:\ECX_SM" on BOTH servers
