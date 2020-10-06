@@ -90,7 +90,7 @@ This section shows how to set up existing md resource as Schedule Mirroring.
 1. Log on to Secondary Server with Administrator Account.
 1. Create a folder for Schedule Mirroring files:
 	- e.g. C:\ECX_SM
-1. Copy [ScheduleMirror.ps1](★) to the folder:
+1. Copy [ScheduleMirror.ps1](https://github.com/EXPRESSCLUSTER/ScheduleMirroring/blob/main/scripts/scheduleMirror_2nodeWin_X33.ps1) to the folder:
 	- e.g. C:\ECX_SM\ScheduleMirror.ps1
 1. Set parameters in the ps1 script:
 	- e.g.
