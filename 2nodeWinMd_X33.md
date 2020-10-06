@@ -77,7 +77,7 @@ This section shows how to set up existing md resource as Schedule Mirroring.
 1. Log on to Primary Server with Administrator Account.
 1. Create a folder:
 	- C:\Program Files\EXPRESSCLUSTER\work\trnreq
-1. Copy [MirrorRecovery.bat](★) to the folder:
+1. Copy [MirrorRecovery.bat](https://github.com/EXPRESSCLUSTER/ScheduleMirroring/blob/main/scripts/mirrorRecovery_2nodeWin_X33.bat) to the folder:
 	- C:\Program Files\EXPRESSCLUSTER\work\trnreq\MirrorRecovery.bat
 1. Set md resource name in MirrorRecovery.bat
 	- e.g.
