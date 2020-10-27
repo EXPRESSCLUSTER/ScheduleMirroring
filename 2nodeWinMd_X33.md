@@ -72,6 +72,7 @@ This section shows how to set up existing md resource as Schedule Mirroring.
 			- Failover Attribute
 				- Prioritize failover policy in the server group: Select
 				- Enable only manual failover among the server groups: CHECK
+1. Apply the configuration
 
 ### On Primary Server
 1. Log on to Primary Server with Administrator Account.
