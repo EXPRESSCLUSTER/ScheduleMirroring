@@ -165,6 +165,7 @@ This section shows how to execute failover from Primary Server to Secondary Serv
 1. If failover group is Online on Primary Server:
 	1. Stop the group.
 	1. Right click Schedule Mirroring target md resource and select "Details".
+	1. Confirm that Primary Server icon is GREEN and Secondary Server icon is GREEN or RED.
 	1. Click Primary Server icon and make it RED. (Data on this server will not be the latest.)
 	1. Click Execute and close.
 1. Right click Schedule Mirroring target md resource and select "Details".
@@ -196,6 +197,7 @@ Until recovering Primary Server, md resource will not be re-synchronized.
 	> mdclose <md resource name>
 	```
 1. On WebManager, right click Schedule Mirroring target md resource and select "Details".
+1. Confirm that Primary Server icon is RED and Seconary Server icon is GREEN.
 1. Click Primary Server icon and make it GREEN. (Disk Copy will be executed.)
 1. Click Execute and close.
 	- **Note:** After this step, Mirroring from Secondary Server to Primary Server will occur.
