@@ -43,7 +43,7 @@ This document describes the fundamental operation steps for configuring *schedul
    Changes on mirror disk `md1` will be lost when the mirror disk is resynchronized in a subsequent step.
    This step can last a long time.
 
-7. Issue `Deactive mirror disk` forcively on Node2.
+7. Issue `Deactive mirror disk` on Node2.
     ```
     clpmdctrl --deactive md1
    ```
